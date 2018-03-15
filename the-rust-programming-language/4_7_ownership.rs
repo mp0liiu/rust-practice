@@ -39,14 +39,14 @@ fn main () {
   type_copy();
 
   // もし, 複数の束縛の所有権を渡し, 渡した所有権を全て返してもらう関数を書くとこうなる
-  let s1 = Student { name: "dekiruyo".to_string(), age: 33, score: 100 };
-  let s2 = Student { name: "One_More_Dead".to_string(), age: 28, score: 90 };
-  let s3 = Student { name: "Vemeru".to_string(), age: 25, score: 66 };
+  let s1 = Student { name: "dekinaiyo".to_string(), age: 33, score: 100 };
+  let s2 = Student { name: "Two_More_Dead".to_string(), age: 28, score: 90 };
+  let s3 = Student { name: "ameru".to_string(), age: 25, score: 66 };
   let (s1, s2, s3, sum) = student_hogehoge(s1, s2, s3);
   println!("score sum {}", sum);
-  assert_eq!(s1.name.as_str(), "dekiruyo");
-  assert_eq!(s2.name.as_str(), "One_More_Dead");
-  assert_eq!(s3.name.as_str(), "Vemeru");
+  assert_eq!(s1.name.as_str(), "dekinaiyo");
+  assert_eq!(s2.name.as_str(), "Two_More_Dead");
+  assert_eq!(s3.name.as_str(), "ameru");
 
 }
 
