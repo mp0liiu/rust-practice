@@ -24,6 +24,7 @@ fn main() {
 
   // for文
   let ary = ['茅', '野', 'カ', 'エ', 'デ'];
+  // 暗黙的に .into_iter() が呼ばれている
   for c in &ary {
     // c: &char
     print!("{}", *c);
